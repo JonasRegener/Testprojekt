@@ -17,7 +17,7 @@
 
 </head>
 
-<body>
+<body onload=init()>
         <div class="header">
                 <h1> Corona Quiz</h1>
         </div>
@@ -29,15 +29,17 @@
                 </div>
 
                 <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        <h5 class="card-title" id="card-title"> Frage 1</h5>
+                        <p class="card-text" id="card-question">Some quick example text to build on the card title and make up the bulk of
                                 asdasdasdsasda</p>
-                                <div class="card-answer" id="answer0"> abc</div>
-                                <div class="card-answer" id="answer1"> abc</div>
-                                <div class="card-answer" id="answer2"> abc</div>
-                                <div class="card-answer" id="answer3"> abc</div>
-
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="card-answer" onclick="answer('answer_1')" id="answer_1"> abc</div>
+                        <div class="card-answer" onclick="answer('answer_2')" id="answer_2"> abc</div>
+                        <div class="card-answer" onclick="answer('answer_3')" id="answer_3"> abc</div>
+                        <div class="card-answer" onclick="answer('answer_4')" id="answer_4"> abc</div>
+                        <div class="question-footer">
+                            <div>    <b>1 </b>von <b id="questions-all"></b> </div>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                 </div>
         </div>
 </body>
