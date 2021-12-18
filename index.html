@@ -5,24 +5,41 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Economica:wght@700&family=Lato:wght@100&family=Raleway:wght@700&display=swap" rel="stylesheet"> 
-        <title> Neuer Notizblock </title>
+        <!-- Bootstrap einbindung-->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <title> Quizapp </title>
+
+
         <style>
         </style>
-
         <script src="script.js">
-
         </script>
 
 </head>
 
-<body onload="init()">
-        <div id="main-container">
-                <div class="notes-container" id="notes-container"></div>
+<body>
+        <div class="header">
+                <h1> Corona Quiz</h1>
         </div>
-        <div class="footer">Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect"
-                        title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/"
-                        title="Flaticon">www.flaticon.com</a></div>
+        <div class="card" style="width: 18rem;">
+                <img src="images/covid.jpg" class="card-img-top" alt="...">
+
+                <div class="honorbox">
+                        <p>Photo by Miguel Á. Padriñán from Pexels</p>
+                </div>
+
+                <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                asdasdasdsasda</p>
+                                <div class="card-answer" id="answer0"> abc</div>
+                                <div class="card-answer" id="answer1"> abc</div>
+                                <div class="card-answer" id="answer2"> abc</div>
+                                <div class="card-answer" id="answer3"> abc</div>
+
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+        </div>
 </body>
 
 
