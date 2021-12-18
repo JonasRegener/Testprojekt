@@ -51,3 +51,33 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
+.bg-success, .bg-danger {
+    color: white;
+}
+
+.endscreen-body-1 img {
+    position: absolute;
+    right: 0;
+    top: 15vh;
+}
+
+.endscreen-body-2 img {
+    position: absolute;
+    left: 0;
+    top: 50vh;
+    transform: scaleX(-1);
+}
+.progress-bar {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.honorbox2 {
+position: absolute;
+bottom: 0;
+}
+
+.honorbox2 p {
+    font-size: 8px;
+color: white;
+}

@@ -18,31 +18,36 @@
 </head>
 
 <body onload=init()>
-        <div class="header">
+        <div class="header" id="header">
                 <h1> Corona Quiz</h1>
         </div>
+        <div class="endscreen-body-1 d-none" id="tropy"> <img src="images/tropy.png"></div>
+        <div class="endscreen-body-2 d-none" id="tropy2"> <img src="images/tropy.png"></div>
         <div class="card" style="width: 18rem;">
-                <img src="images/covid.jpg" class="card-img-top" alt="...">
+                <div id="card-img-top"> <img src="images/covid.jpg" class="card-img-top" alt="...">
 
-                <div class="honorbox">
-                        <p>Photo by Miguel Á. Padriñán from Pexels</p>
+                </div>
+                <div id="card-img-top2" class="d-none"> <img src="images/expert.jpg" class="card-img-top">
+                        <div> <button onclick="restartQuiz()"> Restart Quiz!</button></div>
                 </div>
 
-                <div class="card-body">
+
+                <div class="card-body" id="card-body">
                         <h5 class="card-title" id="card-title"> Frage 1</h5>
-                        <p class="card-text" id="card-question">Some quick example text to build on the card title and make up the bulk of
-                                asdasdasdsasda</p>
+                        <p class="card-text" id="card-question">Frage frage frage frage</p>
                         <div class="card-answer" onclick="answer('answer_1')" id="answer_1"> abc</div>
                         <div class="card-answer" onclick="answer('answer_2')" id="answer_2"> abc</div>
                         <div class="card-answer" onclick="answer('answer_3')" id="answer_3"> abc</div>
                         <div class="card-answer" onclick="answer('answer_4')" id="answer_4"> abc</div>
                         <div class="question-footer">
-                            <div>    <b>1 </b>von <b id="questions-all"></b> </div>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div> <b id="current-question-number"> </b>von <b id="questions-all"></b> </div>
+                                <button class="btn btn-primary" id="next-btn" onclick="nextQuestion()" disabled> Nächste
+                                        Frage</button>
                         </div>
                 </div>
         </div>
 </body>
+                     
 
 
 
